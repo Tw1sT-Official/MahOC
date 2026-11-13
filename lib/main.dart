@@ -6,6 +6,9 @@ import 'services/character_storage.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // True full-screen immersive mode
+  await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+
   // Dark immersive system overlay
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
